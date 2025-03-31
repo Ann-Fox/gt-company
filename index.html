@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение favicon -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Growtask" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>GT-Company</title>
+</head>
+
+<body class="page">
+    <header class="header" id="header">
+        <div class="header__content container">
+
+            <a data-goto=".top" class="header__logo link-id">
+                <!-- <img class='header__icon' src="./assets/images/logo-gradient.svg" alt=""> -->
+                <p class='header__icon'>financial culture</p>
+                <span data-goto=".top" class="header__logo-text link-id">upward</span>
+            </a>
+
+            <div class="header__menu">
+                <nav class="menu__nav" id="myDropdown">
+                    <ul class="menu__ul">
+                        <li><a data-goto=".vacancy" href="#" class="menu__link link-id">Site resources</a></li>
+                        <li><a data-goto=".slider" href="#" class="menu__link link-id">Read on the go</a></li>
+                        <li><a data-goto=".presentation" href="#" class="menu__link link-id">Presentation</a></li>
+                        <li><a data-goto=".faq" href="#" class="menu__link link-id">Answers to questions</a></li>
+                        <button data-goto=".footer" class="header__btn link-id">Write to usе</button>
+                        <div class="social__links">
+                            <a class="social__link" href="https://vk.com/growtask" target="_blank"><img
+                                    src="./assets/icons/vk.svg" alt=""></a>
+                            <a class="social__link" href="https://t.me/growtask" target="_blank"><img
+                                    src="./assets/icons/tg.svg" alt=""></a>
+                        </div>
+                    </ul>
+                </nav>
+                <button onclick="myFunction()" class="btn-burger header__burger dropbtn">
+                    <img src="assets/icons/Burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- section top  -->
+        <div class="paddig-main">
+            <section class="top container">
+                <div class="top__head">
+                    <h1>All about finance<br> <span>Financial literacy</span></h1>
+                    <p>A website for improving the financial culture of citizens. The site is intended for a wide
+                        audience with different levels of knowledge about economics and financial capabilities.</p>
+                </div>
+                <div class="top__images">
+                    <div>
+                        <img src="assets/images/top-screen/image1.jpg" alt="">
+                        <img src="assets/images/top-screen/image2.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/images/top-screen/image3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="top__to-form">
+                    <h4>Ask a question <span>about finances:</span></h4>
+                    <button data-goto=".footer" class="link-id">write to us</button>
+                    <!-- <a class="link-id" href="contacts.html" target="_blank" rel="noopener noreferrer">К форме</a> -->
+                </div>
+            </section>
+        </div>
+        <!-- section vacancy  -->
+        <div class="paddig-main bg">
+            <section class="vacancy container">
+                <div class="vacancy__info">
+                    <div class="vacancy__head">
+                        <h2>Site resources</h2>
+                        <p>The portal provides practical information on various financial topics:</p> <br>
+                        <ul class="vacancy__ul">
+                            <li>Personal budget management</li>
+                            <li> Working with cash</li>
+                            <li>Lending</li>
+                            <li>Protection against financial fraud</li>
+                            <li> Retirement planning</li>
+                        </ul>
+                       <br><p>The site contains not only informational materials, but also useful tools:</p>
+                    </div>
+                    <div class="vacancy__conditions">
+                        <div>
+                            <h1>1984</h1>
+                            <p>Mini-tests for knowledge assessment</p>
+                        </div>
+                        <div>
+                            <h1>451</h1>
+                            <p>Teaching materials for teachers</p>
+                        </div>
+                        <div>
+                            <h1>2025</h1>
+                            <p>Practical advice on various financial issues</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vacancy__photo">
+                    <img src="assets/images/vacancy/about-us-1.jpg" alt="Photo about us">
+                    <img src="assets/images/vacancy/about-us-2.jpg" alt="Photo about us">
+                    <img src="assets/images/vacancy/about-us-3.jpg" alt="Photo about us">
+                </div>
+            </section>
+        </div>
+        <!-- section slider  -->
+        <div class="paddig-main">
+            <section class="slider container">
+                <div class="slider__container">
+                    <div class="slider__head">
+                        <h2>Read on the go</h2>
+                        <div class="slider__buttons">
+                            <button class="slider__button prev-btn">
+                                <img src="./assets/icons/slider-prev-btn.svg" alt="prevBtn">
+                            </button>
+                            <button class="slider__button next-Btn">
+                                <img src="./assets/icons/slider-next-btn.svg" alt="nextBtn">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper__container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/slider/slider-1.jpg" alt="What can you save on?"
+                                        onmouseover="this.src='./assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='./assets/images/slider/slider-1.jpg';">
+                                    <div class="slider__text">
+                                        <p>What can you save on?</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/slider/slider-2.jpg" alt="How to block a card"
+                                        onmouseover="this.src='./assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='./assets/images/slider/slider-2.jpg';">
+                                    <div class="slider__text">
+                                        <p>How to block a card</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/slider/slider-3.jpg" alt="How do I choose a contribution?"
+                                        onmouseover="this.src='./assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='./assets/images/slider/slider-3.jpg';">
+                                    <div class="slider__text">
+                                        <p>How do I choose a contribution?</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/slider/slider-4.jpg" alt="Is it possible to withdraw money?"
+                                        onmouseover="this.src='./assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='./assets/images/slider/slider-4.jpg';">
+                                    <div class="slider__text">
+                                        <p>Is it possible to withdraw money?</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/slider/slider-5.jpg" alt="Who will get the debts?"
+                                        onmouseover="this.src='./assets/images/slider/slider-hover.png';"
+                                        onmouseout="this.src='./assets/images/slider/slider-5.jpg';">
+                                    <div class="slider__text">
+                                        <p>Who will get the debts?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- section presentation  -->
+        <div class="paddig-main bg">
+            <section class="presentation container">
+                <div class="presentation__container">
+                    <picture class="presentation__image">
+                        <img id="image" class="presentation-image" type="jpg"
+                            src="./assets/images/presentation/image-1.jpg" alt="Presentation picture">
+                    </picture>
+
+                    <div class="presentation__btns">
+                        <label class="presentation__btn" data-image-url="./assets/images/presentation/image-1.jpg">
+                            <input type="checkbox" id="imageCheckbox1" class="presentation__radio" checked>
+                            <img class="radio-min-image" src="./assets/images/presentation/image-1.jpg" loading="lazy"
+                                alt="Picture 1">
+                            Картинка 1
+                        </label>
+                        <label class="presentation__btn" data-image-url="/assets/images/presentation/image-2.jpg">
+                            <input type="checkbox" id="imageCheckbox2" class="presentation__radio" checked>
+                            <img class="radio-min-image" src="./assets/images/presentation/image-2.jpg" loading="lazy"
+                                alt="Picture 2">
+                            Картинка 2
+                        </label>
+                        <label class="presentation__btn" data-image-url="/assets/images/presentation/image-3.jpg">
+                            <input type="checkbox" id="imageCheckbox3" class="presentation__radio" checked>
+                            <img class="radio-min-image" src="./assets/images/presentation/image-3.jpg" loading="lazy"
+                                alt="Picture 3">
+                            Картинка 3
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- section faq  -->
+        <div class="paddig-main">
+            <section class="faq container">
+                <div class="faq__container">
+                    <h2>Answers to questions</h2>
+                    <ul class="faq__list">
+                        <li class="faq__item item-1">
+                            <div class="faq__wrapper-1">
+                                <h3 class="wrapper__title-faq">I'm going to invest and I want to know where to start?
+                                </h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-1" src="./assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-1">
+                                    Start by defining your financial goals and investment deadlines. Study
+                                    basic investment instruments such as stocks, bonds, and funds. Define
+                                    determine your risk level and choose the appropriate investment portfolio. It is
+                                    also worth consider getting advice from a financial advisor. Don't forget
+                                    about diversification and a long investment horizon.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item item-2">
+                            <div class="faq__wrapper-2">
+                                <h3 class="wrapper__title-faq">There is a loan, but there is no money. What to do?</h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-2" src="./assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-2">
+                                    If you realize that you cannot make payments on the loan on time and in full, you
+                                    need to contact the bank immediately. You should not hide and hope that your debt
+                                    will be forgiven and forgotten. Even if collectors don't call you or write from the
+                                    bank, interest and fines are still accrued, the debt is growing, and the credit
+                                    history is deteriorating.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item item-3">
+                            <div class="faq__wrapper-3">
+                                <h3 class="wrapper__title-faq">What is a family financial plan?</h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-3" src="./assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-3">
+                                    This is a long-term forecast of the family's financial flows. With it, you plan how
+                                    much money you will earn over a certain period and how you will spend it.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq__item item-4">
+                            <div class="faq__wrapper-4">
+                                <h3 class="wrapper__title-faq">What is forex?</h3>
+                                <button class="faq__btn">
+                                    <img id="rotateButton-4" src="./assets/icons/Icon (Stroke).svg" alt="Open/close">
+                                </button>
+                            </div>
+                            <div class="faq__wrapper-answer">
+                                <p class="answear__faq-4">
+                                    Forex (short for Foreign Exchange) is a currency exchange. The forex market is
+                                    primarily considered to be the international currency market, the largest and most
+                                    active financial market in the world. Its daily turnover exceeds $5 trillion. This
+                                    is more than the turnover of all national stock markets combined.
+                                </p>
+                            </div>
+                        </li>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer__container">
+            <div class="footer__bg">
+                <!-- <div class="footer__head">
+                    <h2>Форма ОС</h2>
+                    <p>Сверстай форму обратной связи. Будет круто, если заявку будут приходить сюда: a@growtask.ru</p>
+                </div>
+                <div class="footer__form">
+                    <form action="https://formsubmit.co/a@growtask.ru" method="post">
+                        <div class="form__inputs">
+                            <input type="text" placeholder="Напиши вопрос*" minlength="3" required>
+                            <input type="text" placeholder="Телефон или почта*" minlength="3" required><input
+                                type="text" placeholder="Твоё имя*" minlength="3" required><input type="text"
+                                placeholder="Соц.сеть или мессенджер" minlength="3" required>
+                        </div>
+                        <div class="form__btns">
+                            <label for="approval" class="label__checkbox">
+                                <input type="checkbox" id="approval" name="approval" class="form__checkbox" required>
+                                <span class="checkbox-icon"></span>
+                                <span>Согласие с политикой</span>
+                            </label>
+                            <button type="submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div> -->
+                <div class="footer__social">
+                    <h4>Не забудь вставить соц.сети</h4>
+                    <div class="social__links">
+                        <a href="#" target="_blank"><img src="./assets/icons/vk.svg" alt=""></a>
+                        <a href="#" target="_blank"><img src="./assets/icons/tg.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+    <!-- Подключение Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Подключение js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

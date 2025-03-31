@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение favicon -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Growtask" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/feedback.css">
+
+    <title>GT-Company</title>
+</head>
+
+<body class="page">
+    <header class="header" id="header">
+        <div class="header__content container">
+
+            <a data-goto=".top" class="header__logo link-id">
+                <!-- <img class='header__icon' src="./assets/images/logo-gradient.svg" alt=""> -->
+                <p class='header__icon'>financial culture</p>
+                <span data-goto=".top" class="header__logo-text link-id">upward</span>
+            </a>
+
+            <div class="header__menu">
+                <nav class="menu__nav" id="myDropdown">
+                    <ul class="menu__ul">
+                        <li><a data-goto=".vacancy" href="#" class="menu__link link-id">Текст и картинки</a></li>
+                        <li><a data-goto=".slider" href="#" class="menu__link link-id">Пример слайдера</a></li>
+                        <li><a data-goto=".presentation" href="#" class="menu__link link-id">Кнопки и картинки</a></li>
+                        <li><a data-goto=".faq" href="#" class="menu__link link-id">Answers to questions</a></li>
+                        <button data-goto=".feedback" class="header__btn link-id">К форме</button>
+                        <div class="social__links">
+                            <a class="social__link" href="https://vk.com/growtask" target="_blank"><img
+                                    src="./assets/icons/vk.svg" alt=""></a>
+                            <a class="social__link" href="https://t.me/growtask" target="_blank"><img
+                                    src="./assets/icons/tg.svg" alt=""></a>
+                        </div>
+                    </ul>
+                </nav>
+                <button onclick="myFunction()" class="btn-burger header__burger dropbtn">
+                    <img src="assets/icons/Burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <feedback class="feedback">
+        <section class="feedback__container">
+            <div class="feedback__bg">
+                <h2 class="feedback__title">Feedback</h2>
+
+                    <p class="feedback__head">Here you can ask a question if some part of the text remains unclear, or write your own
+                        comments and suggestions on the site.</p>
+
+                <div class="feedback__form">
+                    <form action="#" method="post">
+                        <div class="form__inputs">
+                            <input  type="text" placeholder="First Name*" minlength="3" required>
+                            <input class="last-name" type="text" placeholder="Last Name*" minlength="3" required>
+                            <input class="email" type="email" placeholder="Email" minlength="3" required>
+                            <textarea class="feedback__msg" name="massege" placeholder="text*" minlength="3" required></textarea>
+                        </div>
+                        <div class="form__btns">
+                            <label for="approval" class="label__checkbox">
+                                <input type="checkbox" id="approval" name="approval" class="form__checkbox" required>
+                                <span class="checkbox-icon"></span>
+                                <span>Agreement with the policy</span>
+                            </label>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </feedback>
+   <!-- section presentation  -->
+   <div class="paddig-main bg">
+    <section class="presentation container">
+        <div class="presentation__container">
+            <picture class="presentation__image">
+                <img id="image" class="presentation-image" type="jpg"
+                    src="./assets/images/presentation/image-1.jpg" alt="Presentation picture">
+            </picture>
+
+            <div class="presentation__btns">
+                <label class="presentation__btn" data-image-url="./assets/images/presentation/image-1.jpg">
+                    <input type="checkbox" id="imageCheckbox1" class="presentation__radio" checked>
+                    <img class="radio-min-image" src="./assets/images/presentation/image-1.jpg" loading="lazy"
+                        alt="Picture 1">
+                    Картинка 1
+                </label>
+                <label class="presentation__btn" data-image-url="/assets/images/presentation/image-2.jpg">
+                    <input type="checkbox" id="imageCheckbox2" class="presentation__radio" checked>
+                    <img class="radio-min-image" src="./assets/images/presentation/image-2.jpg" loading="lazy"
+                        alt="Picture 2">
+                    Картинка 2
+                </label>
+                <label class="presentation__btn" data-image-url="/assets/images/presentation/image-3.jpg">
+                    <input type="checkbox" id="imageCheckbox3" class="presentation__radio" checked>
+                    <img class="radio-min-image" src="./assets/images/presentation/image-3.jpg" loading="lazy"
+                        alt="Picture 3">
+                    Картинка 3
+                </label>
+            </div>
+        </div>
+    </section>
+</div>
+    <!-- Подключение js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
