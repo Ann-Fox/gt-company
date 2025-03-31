@@ -16,9 +16,9 @@
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/success.css">
 
-    <title>GT-Company</title>
+    <title>Thank You!</title>
 </head>
 
 <body class="page">
@@ -53,70 +53,12 @@
         </div>
     </header>
 
-    <div class="feedback">
-        <section class="feedback__container">
-            <div class="feedback__bg">
-                <h2 class="feedback__title">Feedback</h2>
+    <section class="success">
+        <div class="success__border">
+            <h2 class="success__title">Thank You!</h2>
+        </div>
+    </section>
 
-                <p class="feedback__head">Here you can ask a question if some part of the text remains unclear, or write
-                    your own
-                    comments and suggestions on the site.</p>
-
-                <div class="feedback__form">
-                    <form method="get" action="/success.html" name="contact">
-                        <div class="form__inputs">
-                            <input type="text" placeholder="First Name*" minlength="3" name="first_name" required>
-                            <input class="last-name" name="last_name" type="text" placeholder="Last Name*" minlength="3"
-                                required>
-                            <input class="email" name="email" type="email" placeholder="Email" minlength="3" required>
-                            <textarea class="feedback__msg" name="massege" placeholder="text*" minlength="3"
-                                required></textarea>
-                        </div>
-                        <div class="form__btns">
-                            <label for="approval" class="label__checkbox">
-                                <input type="checkbox" id="approval" name="approval" class="form__checkbox" required>
-                                <span class="checkbox-icon"></span>
-                                <span>Agreement with the policy</span>
-                            </label>
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!-- section presentation  -->
-    <div class="paddig-main bg">
-        <section class="presentation container">
-            <div class="presentation__container">
-                <picture class="presentation__image">
-                    <img id="image" class="presentation-image" type="jpg" src="./assets/images/presentation/image-1.jpg"
-                        alt="Presentation picture">
-                </picture>
-
-                <div class="presentation__btns">
-                    <label class="presentation__btn" data-image-url="./assets/images/presentation/image-1.jpg">
-                        <input type="checkbox" id="imageCheckbox1" class="presentation__radio" checked>
-                        <img class="radio-min-image" src="./assets/images/presentation/image-1.jpg" loading="lazy"
-                            alt="Picture 1">
-                        financial culture 1
-                    </label>
-                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-2.jpg">
-                        <input type="checkbox" id="imageCheckbox2" class="presentation__radio" checked>
-                        <img class="radio-min-image" src="./assets/images/presentation/image-2.jpg" loading="lazy"
-                            alt="Picture 2">
-                        financial culture 2
-                    </label>
-                    <label class="presentation__btn" data-image-url="/assets/images/presentation/image-3.jpg">
-                        <input type="checkbox" id="imageCheckbox3" class="presentation__radio" checked>
-                        <img class="radio-min-image" src="./assets/images/presentation/image-3.jpg" loading="lazy"
-                            alt="Picture 3">
-                        financial culture 3
-                    </label>
-                </div>
-            </div>
-        </section>
-    </div>
     <footer class="footer footer__container">
         <div class="footer__top">
             <div class="footer__btn">
