@@ -1,0 +1,32 @@
+.policy {
+    padding: 80 0;
+}
+
+.policy__head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.policy__text h4 {
+    margin: 40px 0 20px 0;
+}
+
+.policy__text p {
+    margin-bottom: 20px;
+}
+
+.policy__text li {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--text-icon-gray-dark);
+}
+
+@media(min-width: 768px) {
+    .policy {
+        max-width: 50vw;
+    }
+}
