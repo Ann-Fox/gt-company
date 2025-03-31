@@ -54,6 +54,13 @@ body._lock {
     overflow: hidden;
 }
 
+hr {
+    height: 2px;
+    background-color: var(--btn-primaty-static);
+    width: 100%;
+    margin: 30px 0;
+}
+
 /* Переменные */
 :root {
     --main-bg-color: #FFFFFF;
@@ -283,7 +290,7 @@ main {
     margin-bottom: 20px;
 }
 
-.vacancy__ul li{
+.vacancy__ul li {
     list-style: inside;
     font-family: Raleway;
     font-size: 16px;
@@ -320,7 +327,7 @@ main {
     flex-direction: row;
     overflow-x: scroll;
     gap: 16px;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .vacancy__photo img {
@@ -579,138 +586,60 @@ main {
 /* Footer */
 .footer__container {
     background-color: var(--main-black);
-    padding: 80px 0;
-
+    padding: 80px 16px;
 }
 
-.footer__bg {
-    background-image: url(../assets/images/footer/footer-main.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 40px 16px;
+.footer__top {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
-.footer__form {
-    background-color: #fff;
-    padding: 20px 16px;
-    border-radius: 8px;
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.footer__head h2 {
-    margin-bottom: 20px;
-}
-
-.footer__head p,
-.footer__head h2,
-.footer__social h4 {
-    color: var(--main-bg-color);
-}
-
-.form__inputs {
-    display: grid;
-    gap: 12px;
-}
-
-.form__inputs input {
-    border: 2px solid var(--input-static);
-    border-radius: 4px;
-    padding: 12px 16px;
-    width: 100%;
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 48px;
-    box-sizing: border-box;
+    padding: 0 20px;
+    border-radius: 4px;
+    background-color: var(--btn-primaty-static);
+}
 
+.footer__btn a {
     font-family: Raleway;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--text-icon-gray-dark);
-}
-
-input:user-invalid {
-    border: 2px solid var(--input-error);
-    outline: none;
-}
-
-.form__btns {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
-}
-
-.form__checkbox {
-    display: none;
-}
-
-.label__checkbox {
-    display: flex;
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--text-icon-gray-dark);
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    align-items: center;
-    cursor: pointer;
-    font-family: Raleway;
-    font-weight: 400;
-}
-
-.checkbox-icon {
-    width: 24px;
-    height: 24px;
-    background-image: url(../assets/images/footer/check.svg);
-    background-size: contain;
-    margin-right: 8px;
-    flex-shrink: 0;
-}
-
-.checkbox,
-.checkbox-icon:hover {
-    background-image: url('../assets/images/footer/check-hover.svg');
-}
-
-.default {
-    background-image: url('../assets/images/footer/check.svg');
-}
-
-.active {
-    background-image: url('../assets/images/footer/check-active_static.svg');
-}
-
-.active:hover {
-    background-image: url('../assets/images/footer/check-active_hover.svg');
-}
-
-.form__btns button {
-    background-color: var(--btn-primaty-static);
-    height: 48px;
-    color: var(--main-bg-color);
-    border-radius: 4px;
-
-    font-family: Raleway;
-    font-size: 14px;
     font-weight: 700;
     line-height: 21px;
+    color: var(--main-bg-color);
 }
 
-.form__btns button:hover {
-    background-color: var(--btn-primaty-hover);
+.footer__social h4,
+.footer__social a,
+.footer__bottom a {
+    color: var(--main-bg-color);
 }
 
-.form__btns button:active {
-    background-color: var(--btn-primaty-press);
+.footer__social a {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: var(--btn-primaty-static);
 }
 
 .footer__social {
     display: flex;
     flex-direction: column;
-    height: 100px;
-    justify-content: space-between;
+    gap: 10px;
+    /* height: 100px;
+    justify-content: space-evenly; */
 }
 
 .footer__social .social__links {
@@ -736,6 +665,14 @@ input:user-invalid {
 
 .social__links a:hover {
     background-color: var(--button-social-hover);
+}
+
+.footer__bottom a {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
 }
 
 @media(min-width: 375px) {
@@ -790,21 +727,9 @@ input:user-invalid {
         min-width: 378px;
     }
 
-    .footer__bg {
-        background-image: url(../assets/images/footer/footer-main-tablet.svg);
-    }
-
-    .form__inputs {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .form__btns {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-    }
-
-    .form__btns button {
-        width: 164px;
+    .footer__top {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .footer__social .social__links {
@@ -857,14 +782,6 @@ input:user-invalid {
 
     .footer__container {
         padding: 160px 45px;
-    }
-
-    .footer__bg {
-        background-image: url(../assets/images/footer/footer-main-desctop.svg);
-        width: 100%;
-        max-width: 1276px;
-        padding: 60px;
-        margin: 0 auto;
     }
 }
 
@@ -937,6 +854,15 @@ input:user-invalid {
 
     .vacancy__photo img {
         height: 100%;
+    }
+
+    .footer__top {
+        justify-content: space-between;
+    }
+
+    .footer__contacts {
+        flex-direction: row;
+        gap: 40px;
     }
 }
 
@@ -1012,22 +938,8 @@ input:user-invalid {
         width: 304px !important;
     }
 
-    .footer__bg {
-        display: grid;
-        grid-template-columns: 4fr 7fr;
-        column-gap: 48px;
-        row-gap: 60px;
-    }
-
-    .footer__head {
-        margin-bottom: 24px;
-    }
-
-    .footer__form {
-        max-height: 264px;
-        grid-column: 2 / 3;
-        grid-row: 1 / 3;
-        padding: 40px;
+    .footer__contacts {
+        gap: 60px;
     }
 }
 
@@ -1050,11 +962,6 @@ input:user-invalid {
 
     .presentation__btns {
         width: 440px;
-    }
-
-    .footer__bg {
-        background-image: url(../assets/images/footer/footer-main-full.svg);
-        max-width: 1420px;
     }
 }
 
