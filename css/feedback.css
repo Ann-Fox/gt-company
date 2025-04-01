@@ -223,7 +223,6 @@ input:user-invalid {
         padding: 0 45px;
     }
 
-
     .feedback__container {
         padding: 160px 45px;
     }
@@ -239,7 +238,6 @@ input:user-invalid {
     .feedback__head {
         font-size: 24px;
     }
-
 }
 
 @media(min-width: 1280px) {
@@ -256,7 +254,6 @@ input:user-invalid {
     .form__inputs {
         grid-template-columns: 2fr 3fr;
     }
-
 }
 
 @media(min-width: 1440px) {

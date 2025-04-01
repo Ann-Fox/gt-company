@@ -37,33 +37,16 @@ function myFunction() {
 }
 
 // Presentation image
-const imageCheckbox1 = document.querySelector("#imageCheckbox1");
-const imageCheckbox2 = document.querySelector("#imageCheckbox2");
-const imageCheckbox3 = document.querySelector("#imageCheckbox3");
-const image = document.querySelector("#image");
+const presentationBtns = document.querySelectorAll(".presentation__radio");
 
-imageCheckbox1.addEventListener("change", function () {
-    if (imageCheckbox1.checked) {
-        image.src = "./assets/images/presentation/image-1.jpg";
-    } else {
-        image.src = "./assets/images/presentation/image-1.jpg";
-    }
-});
-
-imageCheckbox2.addEventListener("change", function () {
-    if (imageCheckbox2.checked) {
-        image.src = "./assets/images/presentation/image-2.jpg";
-    } else {
-        image.src = "./assets/images/presentation/image-2.jpg";
-    }
-});
-
-imageCheckbox3.addEventListener("change", function () {
-    if (imageCheckbox3.checked) {
-        image.src = "./assets/images/presentation/image-3.jpg";
-    } else {
-        image.src = "./assets/images/presentation/image-3.jpg";
-    }
+presentationBtns.forEach((el, index) => {
+    el.addEventListener("change", function () {
+        if (el.checked) {
+            image.src = `assets/images/presentation/image-${index + 1}.jpg`;
+        } else {
+            image.src = `assets/images/presentation/image-${index + 1}.jpg`;
+        }
+    });
 });
 
 //  Section FAQ

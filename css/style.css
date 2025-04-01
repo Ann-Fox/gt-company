@@ -171,7 +171,6 @@ hr {
     vertical-align: middle;
 }
 
-
 .menu__nav {
     display: none;
     position: absolute;
@@ -182,7 +181,6 @@ hr {
     width: 100%;
     padding: 16px;
     box-shadow: 0 0 25px rgba(5, 25, 25, 0.0784313725) inset;
-
 }
 
 .menu__link {
@@ -215,12 +213,9 @@ hr {
     background-color: var(--btn-primaty-static);
 }
 
-/* .dropdown a:hover {background-color: #ddd;} */
-
 .show {
     display: block;
 }
-
 
 /* Main */
 main {
@@ -327,7 +322,6 @@ main {
     flex-direction: row;
     overflow-x: scroll;
     gap: 16px;
-    /* width: 100vw; */
 }
 
 .vacancy__photo img {
@@ -638,8 +632,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* height: 100px;
-    justify-content: space-evenly; */
 }
 
 .footer__social .social__links {
