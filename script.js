@@ -50,65 +50,27 @@ presentationBtns.forEach((el, index) => {
 });
 
 //  Section FAQ
-const faqWrapper1 = document.querySelector(".item-1");
-const faqBtn1 = document.querySelector(".answear__faq-1");
-if (faqWrapper1) {
-    faqWrapper1.addEventListener("click", function (e) {
-        faqBtn1.classList.toggle("faq_active");
+const faqWrapper = document.querySelectorAll(".faq__item");
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".faq__item");
+
+    items.forEach(function (item) {
+        const toggleAnswer = item.querySelector(".answer");
+        const toggleButton = item.querySelector(".rotateButton");
+
+        item.addEventListener("click", function (e) {
+            if (toggleAnswer.classList.contains("answer__active")) {
+                toggleAnswer.classList.remove("answer__active");
+                toggleButton.classList.remove("rotate");
+            } else {
+                toggleAnswer.classList.add("answer__active");
+                toggleButton.classList.add("rotate");
+            }
+        });
     });
-}
+});
 
-const faqWrapper2 = document.querySelector(".item-2");
-const faqBtn2 = document.querySelector(".answear__faq-2");
-if (faqWrapper2) {
-    faqWrapper2.addEventListener("click", function (e) {
-        faqBtn2.classList.toggle("faq_active");
-    });
-}
-
-const faqWrapper3 = document.querySelector(".item-3");
-const faqBtn3 = document.querySelector(".answear__faq-3");
-if (faqWrapper3) {
-    faqWrapper3.addEventListener("click", function (e) {
-        faqBtn3.classList.toggle("faq_active");
-    });
-}
-
-const faqWrapper4 = document.querySelector(".item-4");
-const faqBtn4 = document.querySelector(".answear__faq-4");
-if (faqWrapper4) {
-    faqWrapper4.addEventListener("click", function (e) {
-        faqBtn4.classList.toggle("faq_active");
-    });
-}
-// Поворот иконки кнопки при нажатии
-const rotateButton1 = document.getElementById("rotateButton-1");
-const faq__btn1 = document.querySelector(".faq__wrapper-1");
-
-faq__btn1.onclick = function () {
-    rotateButton1.classList.toggle("rotate");
-};
-
-const rotateButton2 = document.getElementById("rotateButton-2");
-const faq__btn2 = document.querySelector(".faq__wrapper-2");
-
-faq__btn2.onclick = function () {
-    rotateButton2.classList.toggle("rotate");
-};
-
-const rotateButton3 = document.getElementById("rotateButton-3");
-const faq__btn3 = document.querySelector(".faq__wrapper-3");
-
-faq__btn3.onclick = function () {
-    rotateButton3.classList.toggle("rotate");
-};
-
-const rotateButton4 = document.getElementById("rotateButton-4");
-const faq__btn4 = document.querySelector(".faq__wrapper-4");
-
-faq__btn4.onclick = function () {
-    rotateButton4.classList.toggle("rotate");
-};
 
 // Кнопка checkbox
 const btnEl = document.querySelector(".checkbox-icon");
